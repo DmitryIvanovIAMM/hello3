@@ -11,5 +11,6 @@ libraryDependencies ++= Seq(
   anorm,
   cache,
   ws,
-  "org.sorm-framework" % "sorm" % "0.3.15"
+  "org.sorm-framework" % "sorm" % "0.3.15",
+  "com.h2database" % "h2" % "1.4.177"
 )
