@@ -1,7 +1,6 @@
 package controllers
 
-import models.{DB,Person}
-import play.api._
+import models.Person
 import play.api.data.Form
 import play.api.data.Forms._
 import play.api.mvc._
@@ -21,7 +20,7 @@ object Application extends Controller {
 
   def addPerson = Action { implicit request =>
     val person = personForm.bindFromRequest.get
-    DB.save(person)
+    //DB.save(person)
     Redirect(routes.Application.index())
   }
   

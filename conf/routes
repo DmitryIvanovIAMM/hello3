@@ -3,8 +3,12 @@
 # ~~~~
 
 # Home page
-GET     /                           controllers.Application.index
+GET         /                    controllers.Application.index
 
+<<<<<<< HEAD
 POST    /                           controllers.Application.addPerson
+=======
+POST        /person              controllers.Application.addPerson
+>>>>>>> 49556883cc9d9c3c20d42167f654c3bc9917505a
 # Map static resources from the /public folder to the /assets URL path
-GET     /assets/*file               controllers.Assets.at(path="/public", file)
+GET         /assets/*file        controllers.Assets.at(path="/public", file)
